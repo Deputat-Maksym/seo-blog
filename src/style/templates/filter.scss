@@ -1,0 +1,95 @@
+.filter {
+  position: fixed;
+  top: 60px;
+  right: 0;
+  width: 300px;
+  background: $navbar;
+  transform: translateX(100%);
+  transition: all linear 300ms;
+  color: #fff;
+  height: calc(100vh - 60px);
+
+  @media only screen and (max-width: 480px) {
+    width: 280px;
+  }
+  
+  &-wrap {
+    overflow-y: auto;
+    height: 100%;
+
+    input {
+      display: none;
+    }
+
+    a {
+      color: #fff;
+      font-size: 15px;
+      padding: 4px;
+      display: flex;
+      justify-content: space-between;
+      line-height: 1.2;
+      
+      &:hover {
+        background: rgba(0,0,0,.2);
+      }
+    }
+  }
+
+  &-btn {
+    margin: 0 auto;
+    display: block;
+  }
+  
+  &-sect-head {
+    text-transform: uppercase;
+    font-weight: 700;
+    background: rgba(0,0,0,.2);
+    padding: 10px 15px;
+  }
+  
+  &-list {
+    padding-left: 18px;
+    overflow: hidden;
+    transition: all linear 300ms;
+    list-style: none;
+  }
+  
+  &-type-block {
+    padding: 10px 15px;
+  }
+}
+
+.hide-list {
+  height: 105px !important;
+}
+
+.toggle-btn {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-100%, -50%);
+  background: #2948ff;
+  padding: 22px 12px;
+  border-radius: 10px 0 0 10px;
+
+  @media only screen and (max-width: 480px) {
+    padding: 16px 8px;
+  }
+
+  &:before {
+    color: #fff;
+    font-size: 32px;
+
+    @media only screen and (max-width: 480px) {
+      font-size: 28px;
+    }
+  }
+
+  &:active, &:focus {
+    outline: none;
+  }
+}
+
+.panel-open {
+  transform: translateX(0);
+}

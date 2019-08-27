@@ -1,0 +1,23 @@
+.btt {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: rgba(71, 71, 71, 0.5);
+  color: #fff;
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+
+  &:before {
+    font-size: 35px;
+    color: #fff;
+    text-align: center;
+    line-height: 43px;
+    display: block;
+  }
+
+  &:hover {
+    background: #474747;
+  }
+}

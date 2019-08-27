@@ -1,0 +1,113 @@
+.attract-info {
+  .card {
+    border-radius: 0;
+  }
+
+  .card-image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.card-wrap {
+  background: rgba(0,0,0,0.2);
+  height: 290px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @media only screen and (min-width: 768px) {
+    height: 460px;
+  }
+
+  .btn.btn-md {
+    font-size: .8rem;
+  }
+
+  .card-descr, p:not(:first-child) {
+    @media only screen and (min-width: 768px) {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+.breadcrumb-nav {
+  .breadcrumb {
+    background-color: transparent;
+  }
+}
+
+.title-line {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+
+  @media only screen and (max-width: 480px) {
+    display: block;
+    white-space: unset;
+    overflow: visible;
+  }
+
+  &:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    margin-left: 15px;
+    background-color: red;
+    margin-top: 6px;
+
+    @media only screen and (max-width: 480px) {
+      margin: 3px 0 0 0;
+    }
+  }
+}
+
+.parallax {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-perspective: 1px;
+  perspective: 1px;
+}
+
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.parallax__layer--back {
+  -webkit-transform: translateZ(-1px) scale(2.2);
+  transform: translateZ(-1px) scale(2.2);
+  top: 76px;
+
+  @media only screen and (max-width: 991px) {
+    top: 58px;
+  }
+}
+
+.parallax__layer--base {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  margin-top: 335px;
+  background-color: #fff;
+
+  .main-title {
+    background-color: #fff;
+  }
+
+  @media only screen and (min-width: 768px) {
+    margin-top: 525px;
+  }
+}
+
+.back-color {
+  background-color: #fff;
+}

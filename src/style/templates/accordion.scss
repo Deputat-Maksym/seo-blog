@@ -1,0 +1,92 @@
+.accordion {
+  .card-cont {
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .accord-card {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0 !important;
+    font-size: 1.2rem;
+    line-height: 1.25rem;
+    min-height: 45px;
+
+    @media only screen and (max-width: 767px) {
+      font-size: 1rem;
+      line-height: 1;
+    }
+
+    &:after {
+      content: '\203a';
+      font-size: 48px;
+      position: relative;
+      right: -6px;
+      transform: rotate(90deg);
+      transform-origin: center;
+    }
+
+    &:hover {
+      background: $navbar;
+      color: #fff;
+      transition: all linear 150ms;
+    }
+  }
+
+  .download-link {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    a {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    span {
+      margin: 0 5px;
+    }
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  input {
+    display: none;
+
+    &:checked ~ {
+      .card-cont {
+        height: auto;
+        opacity: 1;
+        visibility: visible;
+        transition: opacity linear 250ms;
+      }
+
+      label {
+        background: #00c851;
+        color: #fff;
+
+        &:hover {
+          background: #00c851;
+        }
+
+        &:after {
+          transform: translate(-15px) rotate(270deg);
+          transform-origin: center;
+        }
+      }
+    }
+  }
+}

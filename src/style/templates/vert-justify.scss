@@ -1,0 +1,14 @@
+.vert-justify {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 65px);
+  margin-top: 65px;
+
+  .content-area {
+    flex-grow: 1;
+  }
+
+  footer {
+    flex-grow: 0;
+  }
+}
