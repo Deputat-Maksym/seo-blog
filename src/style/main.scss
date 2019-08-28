@@ -1,36 +1,12 @@
 /*Bootstrap*/
-@import 'base/mdb';
-@import 'base/jquery.fancybox';
-
-/*Font Awesome*/
-//@import 'font-awesome/regular';
-//@import 'font-awesome/solid';
-//@import 'font-awesome/brands';
-//@import 'font-awesome/fontawesome';
-
-/*Fontello*/
-@import 'fontello/fontello';
+//@import 'base/mdb';
 
 /*general*/
-@import 'common';
-
-/*Main menu*/
-@import 'main-menu/hc-offcanvas-nav';
+@import 'base/common';
 
 /*templates*/
 @import 'templates/header';
-@import 'templates/cards';
 @import 'templates/footer';
-@import 'templates/vert-justify';
-@import 'templates/accordion';
-@import 'templates/commercial';
-@import 'templates/to-top-btn';
-@import 'templates/filter';
-@import 'templates/comments';
-@import 'templates/pagination';
 
 /*pages*/
-@import 'pages/app-page';
 @import 'pages/home';
-@import 'pages/404';
-@import 'pages/blog';

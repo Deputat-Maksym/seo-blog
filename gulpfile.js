@@ -18,7 +18,7 @@ let gulp = require('gulp'),
 let path = {
     build: { //Тут мы укажем куда складывать готовые после сборки файлы
         html: 'build/',
-        js: '../js/',
+        js: 'build/js/',
         css: 'build/css/',
         images: 'build/images/',
         fonts: 'build/fonts/'
@@ -27,7 +27,7 @@ let path = {
         js: '../js/',
         css: '../css/',
         images: '../images/',
-        fonts: '../assets/fonts/'
+        fonts: '../fonts/'
     },
     src: { //Пути откуда брать исходники
         html: 'src/html/pages/*.html', //Синтаксис src/*.html говорит gulp что мы хотим взять все файлы с расширением .html
