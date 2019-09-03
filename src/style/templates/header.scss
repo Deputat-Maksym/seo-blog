@@ -1,15 +1,15 @@
-.header-fixed {
+header {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 10;
+  z-index: 100;
   width: 100%;
+  height: 60px;
+  background: var(--white);
 }
 
-img.logo {
-  max-height: 100% !important;
-  width: auto;
-  display: block;
+.logo {
+  display: flex;
 }
 
 .main-menu-btn {
