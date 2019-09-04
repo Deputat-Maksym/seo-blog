@@ -1,6 +1,17 @@
-/*Variables*/
+/*Variables SCSS*/
+  //Breakpoints
+  $breakpoint-xs: 0;
+  $breakpoint-sm: 576px;
+  $breakpoint-md: 768px;
+  $breakpoint-lg: 992px;
+  $breakpoint-xl: 1200px;
+
+/*Variables CSS*/
 :root {
+  //Colors
   --blue: #007bff;
+  --dark-blue: #0033cc;
+  --light-blue: #66ccff;
   --indigo: #6610f2;
   --purple: #6f42c1;
   --pink: #e83e8c;
@@ -21,11 +32,24 @@
   --danger: #dc3545;
   --light: #f8f9fa;
   --dark: #343a40;
-  --breakpoint-xs: 0;
-  --breakpoint-sm: 576px;
-  --breakpoint-md: 768px;
-  --breakpoint-lg: 992px;
-  --breakpoint-xl: 1200px;
+  --sub-menu: #1548d1;
+  --sub-menu-hover: #295cd6;
+
+  //Shadow
+  --round-shadow: 0 0 35px rgba(0,0,0,.1);
+  --left-shadow: -35px 0 35px -35px rgba(0,0,0,.1);
+
+  @media only screen and (max-width: $breakpoint-lg) {
+    --round-shadow: 0 0 20px rgba(0,0,0,.1);
+    --left-shadow: -20px 0 20px -20px rgba(0,0,0,.1);
+  }
+
+  //Transition
+  --transition: all ease-in 200ms;
+}
+
+html {
+  font-size: 16px;
 }
 
 html, body {
@@ -35,12 +59,25 @@ html, body {
 }
 
 .inner-wrap {
+  width: 100%;
   max-width: 1300px;
   padding: 0 80px;
   margin: 0 auto;
+
+  @media only screen and (max-width: $breakpoint-xl) {
+    padding: 0 25px;
+  }
+
+  @media only screen and (max-width: $breakpoint-md) {
+    padding: 0 10px;
+  }
 }
 
 body {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
   display: flex;
   flex-direction: column;
 }
@@ -51,6 +88,11 @@ header, footer {
 
 main {
   flex-grow: 1;
+  padding-top: 60px;
+
+  @media only screen and (max-width: $breakpoint-lg) {
+    padding-top: 40px;
+  }
 }
 
 footer {

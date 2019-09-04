@@ -1,8 +1,7 @@
-/*Bootstrap*/
-@import 'base/bootstrap/bootstrap-reboot';
-
 /*general*/
+@import 'base/bootstrap/bootstrap-reboot';
 @import 'base/common';
+@import 'base/fonts';
 
 /*templates*/
 @import 'templates/header';
