@@ -1,0 +1,10 @@
+.main-cont {
+  .inner-wrap {
+    display: flex;
+  }
+
+  &-block {
+    margin-right: 3.5%;
+    width: calc(96.5% - 320px);
+  }
+}

@@ -5,7 +5,10 @@
 
 /*templates*/
 @import 'templates/header';
+@import 'templates/grid-elements';
+@import 'templates/sidebar';
+@import 'templates/blog-list-item';
 @import 'templates/footer';
 
 /*pages*/
-@import 'pages/home';
+@import 'pages/blog';

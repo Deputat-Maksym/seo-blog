@@ -1,0 +1,143 @@
+.blog-list-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+
+  &-img {
+    width: 250px;
+    height: auto;
+    min-height: 250px;
+    object-fit: cover;
+    object-position: center;
+    margin-right: 2.5%;
+    overflow: hidden;
+    border-radius: 17px;
+  }
+}
+
+.item-cont {
+  width: calc(97.5% - 250px);
+  border-radius: 17px;
+  padding: 8px 0 0;
+  border: 1px solid var(--light-blue);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+  &-title {
+    font-size: 1.5rem;
+    color: var(--dark-blue);
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 1.2;
+    position: relative;
+    padding: 0 2.9% 4px;
+    margin-bottom: 12px;
+    flex-grow: 0;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 15px;
+      bottom: 0;
+      width: 58%;
+      height: 1px;
+      background: var(--light-blue);
+    }
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  &-text {
+    font-size: 0.875rem;
+    text-align: justify;
+    margin-bottom: 5px;
+    flex-grow: 1;
+    padding: 0 2.9%;
+  }
+
+  &-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 0;
+    background: var(--light-blue);
+    padding: 6px 2.9%;
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 300;
+
+    & > div {
+      flex-grow: 0;
+    }
+  }
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  overflow: hidden;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  flex-grow: 0;
+}
+
+.author {
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-decoration: underline;
+  flex-grow: 1 !important;
+  padding: 0 3.9%;
+}
+
+.border-left {
+  position: relative;
+  padding: 0 3.9%;
+
+  &:last-child {
+    padding-right: 0;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: -25%;
+    left: 0;
+    height: 160%;
+    width: 1px;
+    background: #fff;
+  }
+}
+
+.comments, .reviews {
+  position: relative;
+  padding-left: calc(30px + 3.9%);
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-position: center;
+    background-size: contain;
+  }
+}
+
+.comments:before {
+  width: 20px;
+  height: 19px;
+  left: 18px;
+  background: url("../images/comment.png") no-repeat;
+}
+
+.reviews:before {
+  background: url("../images/eye.png") no-repeat;
+  width: 25px;
+  height: 18px;
+  left: 15px;
+}
