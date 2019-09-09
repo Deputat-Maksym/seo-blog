@@ -110,6 +110,11 @@ nav {
 button {
   outline: none;
   border: none;
+  background: none;
+
+  &:active {
+    border: none;
+  }
 }
 
 h2, .h2 {
