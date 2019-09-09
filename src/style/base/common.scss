@@ -38,6 +38,7 @@
   //Shadow
   --round-shadow: 0 0 35px rgba(0,0,0,.1);
   --left-shadow: -35px 0 35px -35px rgba(0,0,0,.1);
+  --round-shadow-blue-15: 0 0 15px var(--dark-blue);
 
   @media only screen and (max-width: $breakpoint-lg) {
     --round-shadow: 0 0 20px rgba(0,0,0,.1);

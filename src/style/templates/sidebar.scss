@@ -19,14 +19,27 @@
     top: -2px;
     padding: 20px 40px;
   }
-}
 
-.form-title {
-  font-size: 1.5rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #fff;
-  margin-bottom: 65px;
+  &-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 40px;
+    text-align: center;
+
+    &--form {
+      margin-bottom: 65px;
+    }
+
+    &--services {
+      color: var(--dark-blue);
+    }
+  }
+
+  &-services {
+
+  }
 }
 
 .seo-form {
@@ -43,6 +56,10 @@
   label {
     margin-bottom: 30px;
     display: block;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
 
     span {
       font-size: 0.875rem;
@@ -62,5 +79,41 @@
     color: #fff;
     border: 2px solid #fff;
     border-radius: 22px;
+    position: relative;
+
+    &:hover {
+      background: #fff;
+      border: 2px solid var(--dark-blue);
+      color: var(--dark-blue);
+      transition: var(--transition);
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-top: -18px;
+      height: 1px;
+      width: calc(100% + 20px);
+      background: #fff;
+      opacity: 0.4;
+    }
+  }
+}
+
+.inputs-side {
+  margin-bottom: 40px;
+}
+
+.shadow {
+  box-shadow: var(--round-shadow-blue-15);
+}
+
+.services {
+  &-title {
+
   }
 }
