@@ -1,3 +1,66 @@
 .sidebar {
-  width: 320px;
+  &-cont {
+    background: transparent;
+    border: 2px solid var(--dark-blue);
+    border-radius: 17px;
+    position: relative;
+    z-index: 10;
+  }
+
+  &-form {
+    background: url("../images/form-bg.jpg") no-repeat;
+    background-size: cover;
+    border-radius: 17px;
+    overflow: hidden;
+    position: relative;
+    width: calc(100% + 4px);
+    z-index: 10;
+    left: -2px;
+    top: -2px;
+    padding: 20px 40px;
+  }
+}
+
+.form-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 65px;
+}
+
+.seo-form {
+  input {
+    width: 100%;
+    font-size: 0.75rem;
+    font-weight: 300;
+    color: var(--dark-blue);
+    padding: 16px 26px;
+    border: none;
+    border-radius: 22px;
+  }
+
+  label {
+    margin-bottom: 30px;
+    display: block;
+
+    span {
+      font-size: 0.875rem;
+      color: var(--dark-blue);
+      margin-bottom: 6px;
+      display: block;
+    }
+  }
+
+  &-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    text-transform: uppercase;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 22px;
+  }
 }
