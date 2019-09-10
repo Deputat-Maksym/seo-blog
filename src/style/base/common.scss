@@ -14,6 +14,7 @@
   --light-blue: #66ccff;
   --indigo: #6610f2;
   --purple: #6f42c1;
+  --light-purple: #7f99e5;
   --pink: #e83e8c;
   --red: #dc3545;
   --orange: #fd7e14;
@@ -39,6 +40,7 @@
   --round-shadow: 0 0 35px rgba(0,0,0,.1);
   --left-shadow: -35px 0 35px -35px rgba(0,0,0,.1);
   --round-shadow-blue-15: 0 0 15px var(--dark-blue);
+  --round-shadow-lblue-15: 0 0 15px var(--light-blue);
 
   @media only screen and (max-width: $breakpoint-lg) {
     --round-shadow: 0 0 20px rgba(0,0,0,.1);
@@ -115,6 +117,21 @@ button {
 
   &:active {
     border: none;
+  }
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  text-transform: uppercase;
+  border: 2px solid;
+  border-radius: 22px;
+
+  &:hover {
+    transition: var(--transition);
   }
 }
 
