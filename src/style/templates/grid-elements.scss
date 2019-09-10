@@ -1,11 +1,20 @@
 .main-cont {
   .inner-wrap {
     display: flex;
+
+    @media only screen and (max-width: $breakpoint-1090) {
+      flex-direction: column;
+    }
   }
 
   &-block {
     margin-right: 3.5%;
     width: calc(96.5% - 320px);
+
+    @media only screen and (max-width: $breakpoint-1090) {
+      margin-right: 0;
+      width: 100%;
+    }
   }
 }
 

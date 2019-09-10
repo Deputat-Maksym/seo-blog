@@ -1,3 +1,3 @@
-//= templates/top-menu.js
+//= templates/sticky.js
 
 

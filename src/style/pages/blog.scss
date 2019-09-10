@@ -1,6 +1,10 @@
 .main-title {
   padding: 70px 0 80px;
 
+  @media only screen and (max-width: $breakpoint-1090) {
+    padding: 30px 0;
+  }
+
   .inner-wrap {
     text-align: center;
   }

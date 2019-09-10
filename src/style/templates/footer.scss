@@ -2,10 +2,18 @@ footer {
   background-color: var(--dark-blue);
 
   .inner-wrap {
-    padding: 60px 0;
+    padding: 60px 80px;
     position: relative;
     z-index: 1;
     overflow: hidden;
+
+    @media only screen and (max-width: $breakpoint-xl) {
+      padding: 25px;
+    }
+
+    @media only screen and (max-width: $breakpoint-md) {
+      padding: 25px 10px;
+    }
 
     &:before {
       content: '';
@@ -15,7 +23,7 @@ footer {
       border-radius: 50%;
       top: 0;
       right: 40px;
-      transform: translateY(-70%);
+      transform: translateY(-80%);
       display: block;
       background: var(--black-blue);
       z-index: -1;
@@ -28,17 +36,27 @@ footer {
       height: 380px;
       border-radius: 50%;
       bottom: 0;
-      left: 65px;
+      left: 0;
       transform: translateY(85%);
       display: block;
       background: var(--mid-blue);
       z-index: -1;
     }
   }
+}
 
+.footer {
   &-cont {
     position: relative;
     z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+
+    @media only screen and (max-width: $breakpoint-lg) {
+      flex-direction: column;
+    }
   }
 
   &-links {
@@ -46,9 +64,59 @@ footer {
     width: 60%;
     flex-wrap: wrap;
 
-    &-item {
-      width: 33.3333%;
-      padding-right: 5%;
+    @media only screen and (max-width: $breakpoint-lg) {
+      width: 575px;
+      justify-content: center;
     }
+
+    @media only screen and (max-width: $breakpoint-sm) {
+      width: 100%;
+      justify-content: flex-start;
+    }
+
+    &-item {
+      width: 30%;
+      padding-right: 3.3333%;
+      font-size: 0.875rem;
+      color: #fff;
+      font-weight: 500;
+      margin-bottom: 24px;
+
+      @media only screen and (max-width: $breakpoint-sm) {
+        width: 50%;
+        padding-right: 0;
+        margin-bottom: 15px;
+        font-size: .75rem;
+        font-weight: 300;
+      }
+
+      @media only screen and (max-width: $breakpoint-400) {
+        width: 100%;
+        text-align: center;
+      }
+
+      &:hover {
+        color: #fff;
+        transition: var(--transition);
+      }
+    }
+  }
+}
+
+.btn--order {
+  font-size: 1.875rem;
+  color: #fff;
+  border-color: #fff;
+  width: 235px;
+
+  &:hover {
+    background-color: var(--light-blue);
+    border-color: var(--light-blue);
+  }
+}
+
+.counter {
+  @media only screen and (max-width: $breakpoint-sm) {
+    margin-top: 20px;
   }
 }

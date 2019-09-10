@@ -1,8 +1,17 @@
 .pagination {
   padding: 75px 0;
 
+  @media only screen and (max-width: $breakpoint-1090) {
+    padding: 30px 0;
+  }
+
   &-nav {
     display: flex;
+
+    @media only screen and (max-width: $breakpoint-sm) {
+      justify-content: center;
+      position: relative;
+    }
 
     a {
       width: 30px;
@@ -26,36 +35,52 @@
       }
     }
 
-    li:first-child a:before {
-      content: '\2039';
-      margin-right: 10px;
-      background-color: var(--light-blue);
-      display: flex;
-      width: 16px;
-      height: 16px;
-      color: #fff;
-      border-radius: 50%;
-      justify-content: center;
-      align-items: flex-end;
-      font-size: 18px;
-      font-weight: bold;
-      line-height: 18px;
+    li:first-child {
+      @media only screen and (max-width: $breakpoint-sm) {
+        position: absolute;
+        top: 100%;
+        left: 0;
+      }
+
+      a:before {
+        content: '\2039';
+        margin-right: 10px;
+        background-color: var(--light-blue);
+        display: flex;
+        width: 16px;
+        height: 16px;
+        color: #fff;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: flex-end;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 18px;
+      }
     }
 
-    li:last-child a:after {
-      content: '\203a';
-      margin-left: 10px;
-      background-color: var(--light-blue);
-      display: flex;
-      width: 16px;
-      height: 16px;
-      color: #fff;
-      border-radius: 50%;
-      justify-content: center;
-      align-items: flex-end;
-      font-size: 18px;
-      font-weight: bold;
-      line-height: 18px;
+    li:last-child {
+      @media only screen and (max-width: $breakpoint-sm) {
+        position: absolute;
+        top: 100%;
+        right: 0;
+      }
+
+      a:after {
+        content: '\203a';
+        margin-left: 10px;
+        background-color: var(--light-blue);
+        display: flex;
+        width: 16px;
+        height: 16px;
+        color: #fff;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: flex-end;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 18px;
+      }
     }
 
     li:first-child a,

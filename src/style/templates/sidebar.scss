@@ -1,5 +1,10 @@
 .sidebar {
   &-cont {
+    @media only screen and (max-width: $breakpoint-1090) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   }
 
   &-form {
@@ -10,6 +15,13 @@
     position: relative;
     z-index: 10;
     padding: 20px 40px;
+
+    @media only screen and (max-width: $breakpoint-1090) {
+      position: static;
+      width: 300px;
+      padding: 20px;
+      margin: 10px;
+    }
   }
 
   &-title {
@@ -38,10 +50,22 @@
     position: relative;
     z-index: 5;
     top: -14px;
+
+    @media only screen and (max-width: $breakpoint-1090) {
+      position: static;
+      width: 300px;
+      padding: 20px;
+      border-radius: 17px;
+      margin: 10px;
+    }
   }
 
   &-nav ul li {
     margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
 
     a {
       position: relative;
@@ -64,18 +88,38 @@
     position: relative;
     z-index: 1;
     top: -28px;
+
+    @media only screen and (max-width: $breakpoint-1090) {
+      position: static;
+      border-radius: 17px;
+      width: 300px;
+      padding: 20px;
+      margin: 10px;
+    }
   }
 
   &-commerc {
     padding: 30px;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 320px;
+    min-height: 320px;
     display: block;
+    border-radius: 17px;
+    overflow: hidden;
+
+    @media only screen and (max-width: $breakpoint-1090) {
+      width: 300px;
+      margin: 10px;
+    }
 
     &:hover {
       text-decoration: none;
     }
+  }
+
+  @media only screen and (max-width: $breakpoint-1090) {
+    margin-top: 25px;
+    width: 100%;
   }
 }
 
