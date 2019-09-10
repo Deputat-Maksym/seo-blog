@@ -3,6 +3,10 @@
   justify-content: space-between;
   margin-bottom: 40px;
 
+  &:last-child {
+    margin-bottom: 0;
+  }
+
   &-img {
     width: 250px;
     height: auto;
@@ -105,39 +109,33 @@
   &:after {
     content: '';
     position: absolute;
-    top: -25%;
+    top: 0;
     left: 0;
-    height: 160%;
+    height: 100%;
     width: 1px;
     background: #fff;
   }
 }
 
-.comments, .reviews {
-  position: relative;
+.comments, .reviews, .date {
   padding-left: calc(30px + 3.9%);
-
-  &:before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-position: center;
-    background-size: contain;
-  }
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 
-.comments:before {
-  width: 20px;
-  height: 19px;
-  left: 18px;
-  background: url("../images/comment.png") no-repeat;
+.date {
+  padding: 0 3.9%;
 }
 
-.reviews:before {
-  background: url("../images/eye.png") no-repeat;
-  width: 25px;
-  height: 18px;
-  left: 15px;
+.reviews {
+  background: url(../images/icons/eye.png) no-repeat;
+  background-size: 25px 18px;
+  background-position: 12px center;
+}
+
+.comments {
+  background: url("../images/icons/comment.png") no-repeat;
+  background-size: 20px 19px;
+  background-position: 15px 8px;
 }

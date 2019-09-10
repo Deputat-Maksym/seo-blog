@@ -1,10 +1,5 @@
 .sidebar {
   &-cont {
-    background: transparent;
-    border: 2px solid var(--dark-blue);
-    border-radius: 17px;
-    position: relative;
-    z-index: 10;
   }
 
   &-form {
@@ -13,10 +8,7 @@
     border-radius: 17px;
     overflow: hidden;
     position: relative;
-    width: calc(100% + 4px);
     z-index: 10;
-    left: -2px;
-    top: -2px;
     padding: 20px 40px;
   }
 
@@ -38,13 +30,50 @@
   }
 
   &-services {
-    padding: 50px 30px 62px;
+    background-color: #fff;
+    padding: 60px 30px;
+    border-radius: 0 0 17px 17px;
+    border: 2px solid var(--dark-blue);
+    overflow: hidden;
+    position: relative;
+    z-index: 5;
+    top: -14px;
   }
 
   &-nav ul li {
     margin-bottom: 30px;
 
-    a:hover {
+    a {
+      position: relative;
+      padding: 10px 10px 10px 64px;
+      text-align: left;
+
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  &-announce {
+    padding: 60px 30px;
+    border-radius: 0 0 17px 17px;
+    background: url("../images/announce-bg.jpg") no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    top: -28px;
+  }
+
+  &-commerc {
+    padding: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 320px;
+    display: block;
+
+    &:hover {
       text-decoration: none;
     }
   }
@@ -91,9 +120,9 @@
     color: #fff;
 
     &:hover {
-      background: #fff;
+      background: var(--dark-blue);
       border: 2px solid var(--dark-blue);
-      color: var(--dark-blue);
+      color: #fff;
     }
 
     &:before {
@@ -112,21 +141,44 @@
   }
 
   &--services {
-    background: var(--dark-blue);
+    background-color: var(--dark-blue);
     border: 2px solid var(--dark-blue);
     color: #fff;
+    justify-content: left;
+    background-repeat: no-repeat;
+    background-position: 15px center;
 
     &:hover {
-      background: var(--light-blue);
+      background-color: var(--light-blue);
       border: 2px solid var(--light-blue);
       color: #fff;
       box-shadow: var(--round-shadow-lblue-15);
     }
+
+    &:before {
+      content: '';
+      position: absolute;
+      display: block;
+      top: 8px;
+      left: 54px;
+      width: 1px;
+      height: calc(100% - 16px);
+      background: #fff;
+      opacity: .5;
+    }
   }
 
   &--back-white {
-    background: #fff;
+    background-color: #fff;
     color: var(--dark-blue);
+
+    &:before {
+      background-color: var(--dark-blue);
+    }
+
+    &:hover:before {
+      background-color: #fff;
+    }
   }
 }
 
@@ -134,8 +186,66 @@
   margin-bottom: 40px;
 }
 
-.services {
-  &-title {
-
+.bg {
+  &-trophy {
+    background-image: url("../images/icons/trophy-min.png");
+    background-size: 26px 30px;
   }
+
+  &-inform {
+    background-image: url("../images/icons/information-min.png");
+    background-size: 31px;
+  }
+
+  &-social {
+    background-image: url("../images/icons/social-media-min.png");
+    background-size: 34px;
+  }
+
+  &-link {
+    background-image: url("../images/icons/web-link-min.png");
+    background-size: 25px;
+  }
+
+  &-text {
+    background-image: url("../images/icons/text-height-adjustment-min.png");
+    background-size: 25px 20px;
+  }
+
+  &-wallet {
+    background-image: url("../images/icons/wallet-white-min.png");
+    background-size: 24px;
+
+    &.btn--back-white {
+      background-image: url("../images/icons/wallet-min.png");
+
+      &:hover {
+        background-image: url("../images/icons/wallet-white-min.png");
+      }
+    }
+  }
+}
+
+.announce-post {
+  padding-left: 68px;
+  text-align: justify;
+  color: #fff;
+  font-size: 0.75rem;
+  margin-bottom: 45px;
+  background-position: left top;
+  background-repeat: no-repeat;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.info-post {
+  background-image: url("../images/icons/info-min.png");
+  background-size: 42px;
+}
+
+.comment-post {
+  background-image: url("../images/icons/comment-oval-min.png");
+  background-size: 42px;
 }

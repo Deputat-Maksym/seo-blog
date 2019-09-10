@@ -11,7 +11,9 @@
   //Colors
   --blue: #007bff;
   --dark-blue: #0033cc;
+  --black-blue: #0005b5;
   --light-blue: #66ccff;
+  --mid-blue: #003fff;
   --indigo: #6610f2;
   --purple: #6f42c1;
   --light-purple: #7f99e5;
@@ -24,6 +26,8 @@
   --cyan: #17a2b8;
   --white: #fff;
   --gray: #6c757d;
+  --light-gray: #cdcdcd;
+  --mid-gray: #cdcdcd;
   --gray-dark: #343a40;
   --primary: #007bff;
   --secondary: #6c757d;
@@ -127,6 +131,8 @@ button {
   height: 50px;
   width: 100%;
   text-transform: uppercase;
+  font-size: 1.125rem;
+  font-weight: 500;
   border: 2px solid;
   border-radius: 22px;
 
