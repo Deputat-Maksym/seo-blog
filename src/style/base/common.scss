@@ -15,6 +15,7 @@
   --dark-blue: #0033cc;
   --black-blue: #0005b5;
   --light-blue: #66ccff;
+  --white-blue: #d9f2ff;
   --mid-blue: #003fff;
   --indigo: #6610f2;
   --purple: #6f42c1;
@@ -41,12 +42,14 @@
   --dark: #343a40;
   --sub-menu: #1548d1;
   --sub-menu-hover: #295cd6;
+  --black-light: #333;
 
   //Shadow
   --round-shadow: 0 0 35px rgba(0,0,0,.1);
   --left-shadow: -35px 0 35px -35px rgba(0,0,0,.1);
   --round-shadow-blue-15: 0 0 15px var(--dark-blue);
   --round-shadow-lblue-15: 0 0 15px var(--light-blue);
+  --round-shadow-alpha-blue-70: 0 0 70px rgba(0,50,204,.2);
 
   @media only screen and (max-width: $breakpoint-lg) {
     --round-shadow: 0 0 20px rgba(0,0,0,.1);
@@ -64,7 +67,7 @@ html {
 html, body {
   min-width: 320px;
   height: 100%;
-  overflow-x: hidden;
+  //overflow-x: auto;
 }
 
 .inner-wrap {
