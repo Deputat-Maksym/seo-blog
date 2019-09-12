@@ -14,6 +14,7 @@ window.addEventListener('load', function(e) {
       window.addEventListener('scroll', fixingBlock)
     } else {
       removeEventListener('scroll', fixingBlock)
+      commercBox.classList.remove('fixed-top');
     }
   });
 
