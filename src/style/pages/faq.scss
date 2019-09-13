@@ -1,0 +1,21 @@
+.main-title {
+  height: 218px;
+  width: 100%;
+  border-radius: 0 0 10px 10px;
+  background: url("../images/faq-top-img.jpg") no-repeat;
+  background-size: cover;
+  position: relative;
+
+  &:before {
+    content: url("../images/wave-bg-min.png");
+    display: block;
+    position: absolute;
+    top: 56px;
+    left: -80px;
+  }
+}
+
+.top-img-block .inner-wrap {
+  //background: url("../images/wave-bg-min.png") no-repeat;
+  //background-position: 0 50px;
+}

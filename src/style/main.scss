@@ -9,9 +9,10 @@
 @import 'templates/sidebar';
 @import 'templates/blog-list-item';
 @import 'templates/pagination';
-@import 'templates/article';
 @import 'templates/footer';
 @import 'templates/modal-window';
 
 /*pages*/
 @import 'pages/blog';
+@import 'pages/article';
+@import 'pages/faq';
