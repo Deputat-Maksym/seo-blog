@@ -1,0 +1,132 @@
+.bottom-hidden {
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  text-align: justify;
+  color: var(--black-light);
+  font-size: 0.875rem;
+  font-weight: 300;
+}
+
+.top-visible {
+  border-top: 1px solid var(--light-blue);
+}
+
+.faq {
+  &-quest {
+    padding: 0 60px;
+    cursor: pointer;
+
+    &-single {
+      margin: 0;
+      display: block;
+
+      &.block-hidden {
+        display: none;
+      }
+    }
+
+    &-switcher {
+      display: none;
+    }
+
+    &-info {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      &:after {
+        content: '\203a';
+        width: 22px;
+        height: 22px;
+        border-radius: 50%;
+        color: #fff;
+        background: var(--dark-blue);
+        display: inline-block;
+        text-align: center;
+        line-height: 0.7;
+        font-size: 24px;
+        transform: rotate(90deg);
+        transform-origin: center;
+        transition: var(--transition);
+      }
+    }
+
+    &-metadata {
+      display: flex;
+      align-items: center;
+      font-size: 0.75rem;
+      font-weight: 300;
+      color: var(--gray);
+    }
+
+    &-avatar {
+      width: 26px;
+      min-width: 26px;
+      height: 26px;
+      display: block;
+      border: 1px solid #fff;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 50%;
+      margin-right: 2px;
+    }
+  }
+
+  &-question {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    color: var(--dark-blue);
+    padding-right: 10px;
+  }
+
+  &-auth-name, &-quest-date {
+    padding: 5px 12px;
+
+  }
+
+  &-quest-date {
+    border-left: 1px solid var(--light-gray);
+  }
+}
+
+.top-visible {
+  padding: 25px 0;
+  display: flex;
+}
+
+.faq-quest-switcher:checked ~ .faq-quest {
+  background: var(--opt2-blue);
+  position: relative;
+  top: 2px;
+  transition: var(--transition);
+
+  .top-visible {
+    border-top: 1px solid var(--opt2-blue);
+  }
+
+  .bottom-hidden {
+    height: auto;
+    opacity: 1;
+    visibility: visible;
+    padding-bottom: 25px;
+    transition: var(--transition6);
+  }
+
+  .faq-quest-info::after {
+    transform: rotate(270deg);
+    transform-origin: center;
+    transition: var(--transition);
+    background: var(--gray);
+  }
+
+  .top-visible {
+    padding-top: 23px;
+  }
+}
+
+

@@ -1,10 +1,22 @@
-.main-title {
-  height: 218px;
+.faq-main-title {
+  min-height: 218px;
   width: 100%;
   border-radius: 0 0 10px 10px;
   background: url("../images/faq-top-img.jpg") no-repeat;
   background-size: cover;
   position: relative;
+  box-shadow: var(--round-shadow);
+  color: #fff;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+
+  h1 {
+    font-weight: 500;
+    font-size: 2.25rem;
+  }
 
   &:before {
     content: url("../images/wave-bg-min.png");
@@ -15,7 +27,74 @@
   }
 }
 
-.top-img-block .inner-wrap {
-  //background: url("../images/wave-bg-min.png") no-repeat;
-  //background-position: 0 50px;
+.main-cont--faq {
+  .inner-wrap {
+    padding: 0 140px;
+  }
+
+  .main-cont-block {
+    margin-right: 0;
+    width: calc(100% - 320px);
+    padding: 26px 0;
+    border: 1px solid var(--white-blue);
+    border-radius: 0 0 0 10px;
+    box-shadow: var(--round-shadow-alpha-blue-20);
+  }
+}
+
+.faq {
+  &-search {
+    padding: 0 60px;
+
+    &-input {
+      width: 335px;
+      border: none;
+      border-radius: 17px;
+      font-size: 0.875rem;
+      font-weight: 300;
+      color: var(--black-light);
+      padding: 10px 20px 10px 55px;
+      background: var(--mid-gray) url("../images/icons/search.png") 16px center no-repeat;
+    }
+  }
+
+  &-quest-block {
+    padding: 54px 0 0 0;
+
+    h2 {
+      padding: 0 60px;
+      font-size: 1.75rem;
+      font-weight: 500;
+      color: var(--black-light);
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.more-arrow {
+  display: none;
+  margin: 10px 0 0;
+
+  button {
+    margin: 0 auto;
+    color: var(--light-blue);
+    transform: rotate(90deg);
+    transform-origin: center;
+    transition: var(--transition);
+    display: block;
+    font-size: 52px;
+    line-height: 0.2;
+    font-weight: 300;
+
+    &:hover {
+      color: var(--dark-blue);
+      transition: var(--transition);
+    }
+  }
+
+  &.arrow-rot button {
+    transform: rotate(270deg);
+    transition: var(--transition);
+  }
 }

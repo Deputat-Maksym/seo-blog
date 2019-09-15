@@ -18,6 +18,7 @@
   --light-blue: #66ccff;
   --white-blue: #d9f2ff;
   --opt-blue: #b2e5ff;
+  --opt2-blue: #e0f5ff;
   --mid-blue: #003fff;
   --indigo: #6610f2;
   --purple: #6f42c1;
@@ -32,7 +33,7 @@
   --white: #fff;
   --gray: #6c757d;
   --light-gray: #cdcdcd;
-  --mid-gray: #cdcdcd;
+  --mid-gray: #f2f5f5;
   --gray-dark: #343a40;
   --primary: #007bff;
   --secondary: #6c757d;
@@ -61,6 +62,7 @@
 
   //Transition
   --transition: all ease-in 200ms;
+  --transition6: all ease-in 600ms;
 }
 
 html {
