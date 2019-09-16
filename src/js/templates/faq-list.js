@@ -6,6 +6,8 @@ window.addEventListener('load', function(e) {
       }
   }
 
+  // function
+
   var questBlock = document.querySelectorAll('.faq-quest-block');
   for(var a = 0; a < questBlock.length; a += 1) {
     var blockInner = questBlock[a].querySelectorAll('.faq-quest-single'),
@@ -25,26 +27,18 @@ window.addEventListener('load', function(e) {
     }
   }
 
+  //--- Serching ---//
+  // var searchInput = document.querySelector('.faq-search-input');
+  // searchInput.addEventListener('input', filterQuest);
+  //
+  // function filterQuest() {
+  //   var inputVal = this.value.trim();
+  //
+  //   console.log(inputVal);
+  //
 
-  // const list = ['JavaScript', 'Kotlin', 'Rust', 'PHP', 'Ruby', 'Java', 'MarkDown', 'Python', 'C++', 'Fortran', 'Assembler'];
-  //
-  // const result = document.getElementById('results');
-  //
-  // renderList(list, result);
-  //
-  // function filter(val, _list) {
-  //   return _list.filter(it => it.indexOf(val) !== -1);
   // }
-  //
-  // function renderList(_list = [], el = document.body) {
-  //   el.innerHTML = _list.map(item => `<li>${item}/li>`);
-  // }
-  //
-  // document.getElementById('search').addEventListener('input', e => {
-  //   console.time('test');
-  //   renderList(filter(e.target.value, list), result);
-  //   console.timeEnd('test');
-  // });
+
 });
 
 

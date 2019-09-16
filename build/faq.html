@@ -503,25 +503,32 @@
                 </div>
                 <div class="sidebar">
                     <div class="sidebar-cont">
-                        <div class="sidebar-form">
-                            <h2 class="sidebar-title sidebar-title--form">SEO Продвижение</h2>
-                            <form class="seo-form" action="">
+                        <div class="sidebar-faq-form ">
+                            <h2 class="sidebar-title sidebar-title--faq-form">Задать вопрос</h2>
+                            <form class="faq-form" action="">
                                 <div class="inputs-side">
-                                    <label>
-                                        <span>Ваше имя</span>
-                                        <input type="text">
+                                    <label class="form-sect">
+                                        <span class="faq-form-label">Ваше имя</span>
+                                        <input type="text" placeholder="Иван Петров">
                                     </label>
-                                    <label>
-                                        <span>Почта</span>
-                                        <input type="email">
+                                    <label class="form-sect">
+                                        <span class="faq-form-label">Почта</span>
+                                        <textarea name="" id="" placeholder="Краткое описание"></textarea>
                                     </label>
-                                    <label>
-                                        <span>Сайт</span>
-                                        <input type="text">
-                                    </label>
+                                    <div class="gender">
+                                        <div class="faq-form-label">Ваш пол</div>
+                                        <label>
+                                            <input type="radio" name="gender">
+                                            <span>Женский</span>
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="gender">
+                                            <span>Мужской</span>
+                                        </label>
+                                    </div>
                                 </div>
-                                <button type="button" class="btn btn--seo-form">
-                                    Заказать
+                                <button type="button" class="btn">
+                                    Отправить
                                 </button>
                             </form>
                         </div>
