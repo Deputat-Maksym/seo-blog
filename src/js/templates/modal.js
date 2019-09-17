@@ -1,10 +1,12 @@
-var btnModalOpen = document.querySelector('.modal-show'),
+var btnModalOpen = document.querySelectorAll('.modal-show'),
     modalWindow = document.querySelector('.modal'),
     modalInnerLayer = document.querySelector('.modal-inner-layer');
 
-btnModalOpen.addEventListener('click', function() {
-  modalWindow.classList.add('modal-open')
-});
+for(var b = 0; b < btnModalOpen.length; b += 1) {
+  btnModalOpen[b].addEventListener('click', function() {
+    modalWindow.classList.add('modal-open')
+  });
+}
 
 modalInnerLayer.addEventListener('click', function() {
   modalWindow.classList.remove('modal-open')

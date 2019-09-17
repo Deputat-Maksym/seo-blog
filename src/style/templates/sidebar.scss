@@ -118,6 +118,38 @@
     }
   }
 
+  &-pop-quest {
+    padding: 60px 30px 30px;
+    background: url("../images/popular-quest-bg-top-min.png") 106% -20px, url("../images/popular-quest-bg-bottom-min.png") -20px 102%;
+    background-color: var(--dark-blue);
+    background-repeat: no-repeat;
+    color: #fff;
+    border-radius: 0 0 17px 17px;
+    position: relative;
+    z-index: 10;
+    top: -15px;
+    font-size: 0.75rem;
+    font-weight: 300;
+    text-align: justify;
+  }
+
+  &-title--pop {
+    line-height: 1.2;
+  }
+
+  &-specialists {
+    padding: 60px 30px;
+    border-radius: 0 0 17px 17px;
+    position: relative;
+    z-index: 5;
+    top: -30px;
+    border: 2px solid var(--dark-blue);
+    background: url("../images/spec-bg-min.png") 0 0, url("../images/spec-bg-round-min.png") -30% 50%;
+    background-size: 100% 120px, 130%;
+    background-color: #fff;
+    background-repeat: no-repeat;
+  }
+
   @media only screen and (max-width: $breakpoint-1090) {
     margin-top: 25px;
     width: 100%;
@@ -302,7 +334,17 @@
 
 .sidebar {
   &-faq-form {
-    padding: 60px 30px;
+    padding: 46px 30px 60px;
+    border-radius: 0 0 17px 17px;
+    border: 2px solid var(--light-blue);
+    background: #fff;
+    position: relative;
+    z-index: 15;
+    top: -2px;
+
+    .inputs-side {
+      margin-bottom: 25px;
+    }
 
     label {
       cursor: pointer;
@@ -312,6 +354,7 @@
   &-title--faq-form {
     margin-bottom: 40px;
     color: var(--dark-blue);
+    line-height: 1.2;
   }
 }
 
@@ -391,6 +434,36 @@
       left: 4px;
       background: var(--light-blue);
       border-radius: 50%;
+    }
+  }
+}
+
+.btn--faq-form {
+  color: var(--light-blue);
+  border-color: var(--light-blue);
+
+  &:hover {
+    background: var(--light-blue);
+    color: #fff;
+    border-color: var(--light-blue);
+    transition: var(--transition);
+  }
+}
+
+.pop-quest-item {
+  margin-bottom: 30px;
+
+  p {
+    margin: 0
+  }
+
+  a {
+    color: #fff;
+    text-align: right;
+    display: block;
+
+    &:hover {
+      color: #fff;
     }
   }
 }
