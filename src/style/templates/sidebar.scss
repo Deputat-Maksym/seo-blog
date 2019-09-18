@@ -510,3 +510,13 @@
     color: var(--gray);
   }
 }
+
+.sidebar-faq-form,
+.sidebar-pop-quest,
+.sidebar-specialists {
+  position: static;
+  width: 300px;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 17px;
+}

@@ -34,16 +34,30 @@
 
 .main-cont--faq {
   .inner-wrap {
-    padding: 0 140px;
+    padding: 0 16px;
+
+    @media only screen and (min-width: 769px) {
+      padding: 0 45px;
+    }
+
+    @media only screen and (min-width: 1201px) {
+      padding: 0 140px;
+    }
   }
 
   .main-cont-block {
     margin-right: 0;
-    width: calc(100% - 320px);
     padding: 26px 0;
     border: 1px solid var(--white-blue);
     border-radius: 0 0 0 10px;
     box-shadow: var(--round-shadow-alpha-blue-20);
+    background: #fff;
+    position: relative;
+    z-index: 60;
+
+    @media only screen and (min-width: 1091px) {
+      width: calc(100% - 320px);
+    }
   }
 }
 
@@ -51,8 +65,13 @@
   &-search {
     padding: 0 60px;
 
+    @media only screen and (max-width: $breakpoint-md) {
+      padding: 0 15px;
+    }
+
     &-input {
-      width: 335px;
+      width: 100%;
+      max-width: 335px;
       border: none;
       border-radius: 17px;
       font-size: 0.875rem;
@@ -66,6 +85,10 @@
   &-quest-block {
     padding: 54px 0 0 0;
 
+    @media only screen and (max-width: $breakpoint-md) {
+      padding: 24px 0 0;
+    }
+
     h2 {
       padding: 0 60px;
       font-size: 1.75rem;
@@ -73,6 +96,10 @@
       color: var(--black-light);
       text-transform: uppercase;
       margin-bottom: 20px;
+
+      @media only screen and (max-width: $breakpoint-md) {
+        padding: 0 15px;
+      }
     }
   }
 }
