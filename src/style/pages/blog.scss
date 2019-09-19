@@ -20,7 +20,7 @@
 }
 
 .main-cont--blog {
-  .inner-wrap {
+  & > .inner-wrap {
     background: url(../images/spec-bg-round-min.png) 0 12% no-repeat,
                 url(../images/blog-main-1-min.png) no-repeat,
                 url(../images/blog-main-4-min.png) 0 60% no-repeat,
