@@ -42,6 +42,7 @@
   }
 
   &-services {
+    background: url(../images/blog-main-1-min.png) -78% -0px no-repeat,url(../images/blog-article-1-min.png) 170% 70% no-repeat;
     background-color: #fff;
     padding: 60px 30px;
     border-radius: 0 0 17px 17px;
@@ -514,9 +515,12 @@
 .sidebar-faq-form,
 .sidebar-pop-quest,
 .sidebar-specialists {
-  position: static;
-  width: 300px;
-  padding: 20px;
-  margin: 10px;
-  border-radius: 17px;
+
+  @media only screen and (max-width: $breakpoint-1090) {
+    position: static;
+    width: 300px;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 17px;
+  }
 }

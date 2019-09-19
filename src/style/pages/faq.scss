@@ -35,6 +35,12 @@
 .main-cont--faq {
   .inner-wrap {
     padding: 0 16px;
+    background: url(../images/spec-bg-round-min.png) 100% 0 no-repeat,
+                url(../images/spec-bg-round-min.png) 0 12% no-repeat,
+                url(../images/spec-bg-round-min.png) 5% 50% no-repeat,
+                url(../images/spec-bg-round-min.png) 100% 35% no-repeat,
+                url(../images/spec-bg-round-min.png) 0 100% no-repeat,
+                url(../images/spec-bg-round-min.png) 100% 88% no-repeat;
 
     @media only screen and (min-width: 769px) {
       padding: 0 45px;
@@ -51,9 +57,10 @@
     border: 1px solid var(--white-blue);
     border-radius: 0 0 0 10px;
     box-shadow: var(--round-shadow-alpha-blue-20);
-    background: #fff;
     position: relative;
     z-index: 60;
+    background: url(../images/faq-1-min.png) 105% 20% no-repeat,
+                url(../images/faq-1-min.png) -5% 40% no-repeat #fff;
 
     @media only screen and (min-width: 1091px) {
       width: calc(100% - 320px);

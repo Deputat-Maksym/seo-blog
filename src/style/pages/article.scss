@@ -4,6 +4,14 @@
   @media only screen and (max-width: $breakpoint-1090) {
     padding-top: 30px;
   }
+
+  .inner-wrap {
+    background: url(../images/spec-bg-round-min.png) -5% 25% no-repeat,
+                url(../images/spec-bg-round-min.png) 80% 50% no-repeat,
+                url(../images/spec-bg-round-min.png) -5% 60% no-repeat,
+                url(../images/spec-bg-round-min.png) 88% 90% no-repeat,
+                url(../images/blog-main-1-min.png) 0 100% no-repeat;
+  }
 }
 
 .article {
@@ -23,6 +31,7 @@
     border-radius: 10px;
     padding: 16px;
     box-shadow: var(--round-shadow-alpha-blue-20);
+    background-color: #fff;
 
     p {
       color: var(--black-light);
@@ -465,11 +474,15 @@
     border-radius: 10px;
     padding: 42px 36px 100px;
     margin-top: 30px;
-    background-image: url("../images/author-bg-top-min.png"),
-                      url("../images/author-bg-bot-min.png");
-    background-position: -20% -2%, left bottom;
-    background-size: auto, 100%;
-    background-repeat: no-repeat;
+    background: url("../images/blog-article-2-min.png") 26px 80px no-repeat,
+                url("../images/blog-article-3-min.png") 210px 130px no-repeat,
+                url("../images/blog-article-4-min.png") 45px 300px no-repeat,
+                url("../images/author-bg-top-min.png") -20% -2% no-repeat,
+                url("../images/author-bg-bot-min.png") left bottom no-repeat,
+                url("../images/blog-article-5-min.png") 170px 300px no-repeat,
+                url("../images/blog-article-1-min.png") 115% 90% no-repeat;
+    background-size: auto, auto, auto, auto, 100%, auto, auto;
+    background-color: #fff;
     box-shadow: var(--round-shadow-alpha-blue-20);
     display: flex;
     justify-content: space-between;

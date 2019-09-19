@@ -18,3 +18,13 @@
   text-transform: uppercase;
   padding: 0 20px 10px;
 }
+
+.main-cont--blog {
+  .inner-wrap {
+    background: url(../images/spec-bg-round-min.png) 0 12% no-repeat,
+                url(../images/blog-main-1-min.png) no-repeat,
+                url(../images/blog-main-4-min.png) 0 60% no-repeat,
+                url(../images/blog-main-4-min.png) 85% 78% no-repeat,
+                url(../images/blog-main-5-min.png) 100% 105% no-repeat;
+  }
+}
