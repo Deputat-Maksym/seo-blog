@@ -1,0 +1,145 @@
+.top-screen {
+  background-color: var(--light-blue);
+
+  & > .inner-wrap {
+    background: url("../images/main-top-bg-1.png") 100% 0 no-repeat;
+    background-size: auto 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.top-slider-wrap {
+  width: 600px;
+  min-width: 600px;
+
+  .tns-outer {
+    position: relative;
+
+    button[data-action='stop'], button[data-action='start'] {
+      display: none;
+    }
+  }
+
+  .tns-nav {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    button {
+      padding: 0;
+      margin: 0 10px;
+
+      &:before {
+        content: '';
+        width: 8px;
+        height: 8px;
+        background: #fff;
+        border-radius: 50%;
+        display: block;
+        opacity: 0.5;
+      }
+
+      &.tns-nav-active:before {
+        opacity: 0.8;
+      }
+    }
+  }
+}
+
+.slider-item {
+  height: 170px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+.btn--audit {
+  width: 370px;
+  background: #fff;
+  border-color: #fff;
+  color: var(--dark-blue);
+  font-size: 1.75rem;
+  margin: 25px 0;
+
+  &:hover {
+    background: var(--dark-blue);
+    border-color: var(--dark-blue);
+    color: #fff;
+    transition: var(--transition);
+  }
+}
+
+.top-form {
+  .inner-wrap {
+    padding-left: 40px;
+    padding-right: 0;
+
+    .top-form-wrap {
+      border-radius: 45px 0 0;
+      background: url("../images/main-top-bg-2.png") 100% 0 no-repeat #fff;
+      background-size: auto 100%;
+      border-bottom: 3px solid var(--light-blue);
+      padding: 28px 80px 27px 40px;
+    }
+  }
+
+  &-title {
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--dark-blue);
+    margin-bottom: 50px;
+  }
+}
+
+.seo-form--main {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  label {
+    margin: 0;
+
+    span {
+      font-size: 1.125rem;
+      font-weight: 500;
+      color: var(--black-light);
+      margin-bottom: 15px;
+    }
+  }
+
+  input {
+    border: 2px solid var(--dark-blue);
+    width: 230px;
+    font-size: 0.875rem;
+    padding: 13px 26px;
+
+    &:focus {
+      box-shadow: var(--round-shadow-lblue-15);
+    }
+  }
+}
+
+.btn--top-form {
+  width: 200px;
+  color: #fff;
+  border-color: #fff;
+
+  &:hover {
+    border-color: var(--light-blue);
+    background-color: var(--light-blue);
+    box-shadow: var(--round-shadow-blue-15);
+    color: var(--dark-blue);
+  }
+}
+
+
+

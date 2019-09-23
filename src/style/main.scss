@@ -3,6 +3,9 @@
 @import 'base/common';
 @import 'base/fonts';
 
+/*slider*/
+@import 'libraries/tiny-slider';
+
 /*templates*/
 @import 'templates/header';
 @import 'templates/grid-elements';
@@ -17,3 +20,4 @@
 @import 'pages/blog';
 @import 'pages/article';
 @import 'pages/faq';
+@import 'pages/main-page';
