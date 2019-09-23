@@ -141,5 +141,187 @@
   }
 }
 
+.why {
+  padding-top: 65px;
+}
+
+.main-sect-title {
+  text-transform: uppercase;
+  color: var(--black-light);
+  font-size: 2.25rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.inner-wrap--why {
+  padding: 0;
+}
+
+.wave {
+  display: flex;
+
+  &-sect {
+    width: calc(100% / 6);
+    height: 193px;
+
+    &:nth-child(odd) {
+      background: url("../images/wave-left-min.png") no-repeat;
+      background-size: 100% 100%;
+      position: relative;
+
+      .card {
+        position: absolute;
+        top: 18px;
+        right: 0;
+        transform: translateX(85px);
+        padding-top: 30px;
+
+        &:after {
+          top: -21px;
+          left: 46px;
+        }
+      }
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: block;
+        width: 46px;
+        height: 46px;
+        border-radius: 50%;
+        background: var(--light-blue);
+        transform: translate(42px,-8px);
+      }
+
+      &:after {
+        content: '01';
+        position: absolute;
+        bottom: -3px;
+        left: 1px;
+        width: 36px;
+        height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        box-shadow: var(--round-shadow-alpha-blue-10);
+        background: #fff;
+        font-size: 1.25rem;
+      }
+    }
+
+    &:nth-child(even) {
+      background: url("../images/wave-right-min.png") no-repeat;
+      background-size: 100% 100%;
+      position: relative;
+
+      .card {
+        position: absolute;
+        bottom: 18px;
+        right: 0;
+        transform: translateX(66px);
+        padding-bottom: 30px;
+
+        &:after {
+          bottom: -23px;
+          left: 43px;
+        }
+      }
+
+      &:before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        display: block;
+        width: 46px;
+        height: 46px;
+        border-radius: 50%;
+        background: var(--dark-blue);
+        transform: translate(20px,10px);
+      }
+
+      &:after {
+        content: '01';
+        position: absolute;
+        top: -3px;
+        left: 1px;
+        width: 36px;
+        height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        box-shadow: var(--round-shadow-alpha-blue-10);
+        background: #fff;
+        font-size: 1.25rem;
+      }
+    }
+
+    &:last-child:after {
+      content: '' !important;
+      background: url("../images/wave-right-min.png") no-repeat;
+      background-size: 100% 100%;
+      width: 213px;
+      height: 193px;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translateX(100%);
+      box-shadow: none;
+      border-radius: unset;
+    }
+
+    .card {
+      padding: 15px;
+      color: var(--black-light);
+      font-size: 1.125rem;
+      font-weight: 300;
+      box-shadow: var(--round-shadow-alpha-blue-10);
+      border-radius: 8px;
+      width: 130px;
+      line-height: 1.2;
+      background: #fff;
+
+      //&:after {
+      //  position: absolute;
+      //  width: 36px;
+      //  height: 36px;
+      //  display: flex;
+      //  align-items: center;
+      //  justify-content: center;
+      //  border-radius: 50%;
+      //  box-shadow: var(--round-shadow-alpha-blue-10);
+      //  background: #fff;
+      //  font-size: 1.25rem;
+      //}
+      //
+      //&:nth-child(1):after {
+      //  content: '01';
+      //}
+      //
+      //&:nth-child(2):after {
+      //  content: '02';
+      //}
+      //
+      //&:nth-child(3):after {
+      //  content: '03';
+      //}
+      //
+      //&:nth-child(4):after {
+      //  content: '04';
+      //}
+      //
+      //&:nth-child(5):after {
+      //  content: '05';
+      //}
+    }
+  }
+}
+
 
 
