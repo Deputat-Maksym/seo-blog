@@ -45,7 +45,7 @@
       }
 
       &.tns-nav-active:before {
-        opacity: 0.8;
+        opacity: 1;
       }
     }
   }
@@ -160,6 +160,7 @@
 
 .wave {
   display: flex;
+  padding-bottom: 25px;
 
   &-sect {
     width: calc(100% / 6);
@@ -171,6 +172,7 @@
 
       @media only screen and (min-width: $breakpoint-lg) {
         background: url("../images/wave-left-min.png") no-repeat;
+        background-size: 100% 100%;
       }
 
       .card {
@@ -218,6 +220,7 @@
 
       @media only screen and (min-width: $breakpoint-lg) {
         background: url("../images/wave-right-min.png") no-repeat;
+        background-size: 100% 100%;
       }
 
       .card {
@@ -292,6 +295,35 @@
       background: #fff;
     }
   }
+}
+
+.reasons {
+  max-width: 980px;
+  padding: 85px 10px 70px;
+  margin: 0 auto;
+
+  &-item {
+    display: flex;
+    border-radius: 17px;
+    box-shadow: var(--round-shadow-alpha-blue-10);
+    height: 160px;
+    margin: 30px 0 85px;
+  }
+}
+
+.pict-side {
+  width: 365px;
+}
+
+.info-side {
+  width: calc(100% - 365px);
+  padding: 25px 32px;
+  text-align: justify;
+  font-size: 0.875rem;
+  font-weight: 300;
+  color: var(--black-light);
+  line-height: 1.3;
+  overflow: hidden;
 }
 
 
