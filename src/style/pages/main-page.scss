@@ -526,5 +526,113 @@
   }
 }
 
+.last-news {
+  padding-bottom: 85px;
 
+  &-wrap {
+    background: linear-gradient(to right, #66cbff 45%, #76dcff 55%, #75dcff 100%);
+    margin: 90px 0 30px;
+
+    .inner-wrap {
+      min-height: 400px;
+      background: url("../images/last-news-bg.jpg") no-repeat;
+      background-size: 100% 100%;
+      position: relative;
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 80px;
+        left: -25px;
+        display: block;
+        width: 200px;
+        height: 170px;
+        background: url("../images/last-news-rounds.png") no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+}
+
+.alike-art-items--last {
+  margin: 0 -15px;
+
+  &:before {
+    display: none;
+  }
+
+  .alike-art-item {
+    width: calc(33.3333% - 30px);
+    margin: 10px 15px;
+  }
+
+  .alike-item-img img {
+    height: 285px;
+  }
+
+  .alike-item-text {
+    font-size: 1rem;
+    color: var(--black-light);
+  }
+}
+
+.last-quest {
+  width: calc(33.3333% - 30px);
+  margin: 0 15px;
+  padding: 0 3%;
+  position: relative;
+  background: transparent;
+  color: #fff;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: -30px;
+    left: 0;
+    height: calc(100% + 60px);
+    width: 100%;
+    background: url(../images/last-quest-bg.jpg) no-repeat;
+    background-size: 100% 100%;
+    z-index: -1;
+  }
+
+  &-title {
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 35px;
+  }
+
+  &-link {
+    margin-bottom: 35px;
+    color: #fff;
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 300;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &:hover {
+      text-decoration: none;
+      color: var(--light-blue);
+      transition: var(--transition);
+    }
+  }
+}
+
+.feedback {
+  &-rotator {
+
+    img {
+      height: 200px;
+    }
+    .slide-center {
+      img {
+        height: 250px;
+      }
+
+    }
+  }
+}
 

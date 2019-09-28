@@ -3,3 +3,4 @@
 //= templates/modal.js
 //= templates/faq-list.js
 //= templates/top-slider.js
+//= templates/feedback-rotator.js
