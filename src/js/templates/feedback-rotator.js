@@ -4,9 +4,10 @@ if(document.querySelector('.feedback-rotator')) {
     items: 3,
     autoplay: false,
     gutter: 30,
+    loop: false,
     // controls: false,
     lazyload: true,
-    mouseDrag: true,
+    // mouseDrag: true,
     navPosition: 'bottom',
     controlsText: ['<', '>'],
     // center: true
