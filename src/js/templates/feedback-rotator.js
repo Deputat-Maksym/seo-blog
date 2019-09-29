@@ -3,7 +3,7 @@ if(document.querySelector('.feedback-rotator')) {
     container: '.feedback-rotator',
     items: 3,
     autoplay: false,
-    // mode: 'gallery',
+    gutter: 30,
     // controls: false,
     lazyload: true,
     mouseDrag: true,
@@ -11,6 +11,8 @@ if(document.querySelector('.feedback-rotator')) {
     controlsText: ['<', '>'],
     // center: true
   });
+
+  changeCenterSlide();
 
   slider2.events.on('indexChanged', changeCenterSlide);
 

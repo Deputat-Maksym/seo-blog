@@ -624,15 +624,98 @@
 .feedback {
   &-rotator {
 
-    img {
-      height: 200px;
-    }
     .slide-center {
       img {
-        height: 250px;
+        //height: 250px;
       }
-
     }
+  }
+
+  &-single {
+    margin: 46px 35px;
+    box-shadow: var(--round-shadow);
+    position: relative;
+    transform: scale(0.8);
+    filter: grayscale(100%);
+    opacity: 0.55;
+    transition: var(--transition);
+  }
+
+  &-img {
+    position: relative;
+    overflow: hidden;
+    height: 235px;
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: -45px;
+      left: -80px;
+      display: block;
+      width: 180px;
+      height: 180px;
+      background: url("../images/feedback-foto-bg.png");
+      background-size: contain;
+    }
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  &-text {
+    font-size: 0.8125rem;
+    font-weight: 300;
+    color: var(--black-light);
+    padding: 48px 28px 32px;
+    text-align: justify;
+    position: relative;
+  }
+
+  &-name {
+    font-size: 1.125rem;
+    font-weight: 500;
+    position: absolute;
+    left: 13px;
+    top: 0;
+    background: #fff;
+    transform: translateY(-50%);
+    padding: 8px 15px;
+    text-transform: uppercase;
+    max-width: 180px;
+    line-height: 1.3;
+  }
+}
+
+.tns-slide-active {
+  &.slide-center {
+    .feedback-single {
+      &:after {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        top: -45px;
+        left: -80px;
+        display: block;
+        width: 180px;
+        height: 180px;
+        background: url("../images/feedback-bg.png");
+        background-size: contain;
+      }
+    }
+  }
+
+}
+
+.slide-center {
+  .feedback-single {
+    transform: scale(1);
+    filter: grayscale(0);
+    transition: var(--transition);
+    opacity: 1;
   }
 }
 
