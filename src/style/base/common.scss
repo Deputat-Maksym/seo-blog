@@ -53,6 +53,7 @@
   --round-shadow-blue-15: 0 0 15px var(--dark-blue);
   --round-shadow-lblue-15: 0 0 15px var(--light-blue);
   --round-shadow-alpha-blue-70: 0 0 70px rgba(0,50,204,.2);
+  --round-shadow-alpha-blue-35: 0 0 35px rgba(0,50,204,.3);
   --round-shadow-alpha-blue-20: 0 0 20px rgba(0,50,204,.1);
   --round-shadow-alpha-blue-10: 0 0 10px rgba(0,50,204,.2);
 
@@ -63,6 +64,7 @@
 
   //Transition
   --transition: all ease-in 200ms;
+  --transition4: all ease-in 400ms;
   --transition6: all ease-in 600ms;
 }
 
