@@ -4,7 +4,9 @@
 @import 'base/fonts';
 
 /*slider*/
-@import 'libraries/tiny-slider';
+//@import 'libraries/tiny-slider';
+@import 'libraries/glide.core';
+@import 'libraries/glide.theme';
 
 /*templates*/
 @import 'templates/header';

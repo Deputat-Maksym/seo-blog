@@ -1,4 +1,4 @@
-//= libraries/tiny-slider.js
+//= libraries/glide.min.js
 //= templates/sticky.js
 //= templates/modal.js
 //= templates/faq-list.js
