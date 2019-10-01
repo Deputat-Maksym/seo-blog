@@ -623,10 +623,23 @@
 
 .feedback {
   &-rotator {
+    .glide__arrow {
+      &--right {
+        border: none;
+        font-size: 0;
+        width: 32px;
+        height: 62px;
+        background: url("../images/arrow-right.png") no-repeat;
+        background-size: contain;
+      }
 
-    .slide-center {
-      img {
-        //height: 250px;
+      &--left {
+        border: none;
+        font-size: 0;
+        width: 32px;
+        height: 62px;
+        background: url("../images/arrow-left.png") no-repeat;
+        background-size: contain;
       }
     }
   }
@@ -639,6 +652,31 @@
     filter: grayscale(100%);
     opacity: 0.55;
     transition: var(--transition);
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 26px;
+      left: -28px;
+      display: block;
+      width: 50px;
+      height: 54px;
+      background: url("../images/triangle-top.png");
+      background-size: contain;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      right: -70px;
+      display: block;
+      width: 90px;
+      height: 90px;
+      background: url("../images/triangle-bottom.png");
+      background-size: contain;
+      opacity: 1;
+    }
   }
 
   &-img {
@@ -673,6 +711,19 @@
     padding: 48px 28px 32px;
     text-align: justify;
     position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: -35px;
+      transform: translateY(-50%);
+      display: block;
+      width: 135px;
+      height: 24px;
+      background: url("../images/feedback-wave.png");
+      background-size: contain;
+    }
   }
 
   &-name {
@@ -712,6 +763,11 @@
       height: 180px;
       background: url("../images/feedback-bg.png");
       background-size: contain;
+    }
+
+    &:before {
+      opacity: 0;
+      transition: linear all 350ms;
     }
   }
 }
