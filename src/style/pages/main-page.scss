@@ -7,12 +7,35 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media only screen and (max-width: $breakpoint-xl) {
+      background-position: 96% 0;
+    }
+
+    @media only screen and (max-width: $breakpoint-md) {
+      padding-left: 0;
+    }
+
+    @media only screen and (max-width: $breakpoint-640) {
+      flex-wrap: wrap;
+      padding: 0;
+      justify-content: center;
+    }
   }
 }
 
 .top-slider-wrap {
   width: 600px;
   min-width: 600px;
+
+  @media only screen and (max-width: $breakpoint-xl) {
+    min-width: 50%;
+    width: 50%;
+  }
+
+  @media only screen and (max-width: $breakpoint-640) {
+    width: 100%;
+  }
 
   .tns-outer {
     position: relative;
@@ -70,6 +93,11 @@
   font-size: 1.75rem;
   margin: 25px 0;
 
+  @media only screen and (max-width: $breakpoint-lg) {
+    width: 280px;
+    font-size: 1.2rem;
+  }
+
   &:hover {
     background: var(--dark-blue);
     border-color: var(--dark-blue);
@@ -83,12 +111,25 @@
     padding-left: 40px;
     padding-right: 0;
 
+    @media only screen and (max-width: $breakpoint-xl) {
+      padding-left: 25px;
+    }
+
+    @media only screen and (max-width: $breakpoint-md) {
+      padding-left: 0;
+    }
+
     .top-form-wrap {
       border-radius: 45px 0 0;
       background: url("../images/main-top-bg-2.png") 100% 0 no-repeat #fff;
       background-size: auto 100%;
       border-bottom: 3px solid var(--light-blue);
       padding: 28px 80px 27px 40px;
+
+      @media only screen and (max-width: $breakpoint-xl) {
+        border-radius: 0;
+        padding: 28px 10px 27px;
+      }
     }
   }
 
@@ -97,6 +138,10 @@
     font-weight: 500;
     color: var(--dark-blue);
     margin-bottom: 50px;
+
+    @media only screen and (max-width: $breakpoint-lg) {
+      margin-bottom: 24px;
+    }
   }
 }
 
@@ -105,14 +150,30 @@
   justify-content: space-between;
   align-items: flex-end;
 
+  @media only screen and (max-width: $breakpoint-lg) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
   label {
     margin: 0;
+
+    @media only screen and (max-width: $breakpoint-lg) {
+      width: 33.3333%;
+      margin: 0 0 15px;
+      padding: 0 8px 0;
+    }
 
     span {
       font-size: 1.125rem;
       font-weight: 500;
       color: var(--black-light);
       margin-bottom: 15px;
+
+      @media only screen and (max-width: $breakpoint-lg) {
+        margin-bottom: 10px;
+        font-size: 1rem;
+      }
     }
   }
 
@@ -121,6 +182,10 @@
     width: 230px;
     font-size: 0.875rem;
     padding: 13px 26px;
+
+    @media only screen and (max-width: $breakpoint-lg) {
+      width: 100%;
+    }
 
     &:focus {
       box-shadow: var(--round-shadow-lblue-15);
@@ -133,6 +198,11 @@
   color: #fff;
   border-color: #fff;
   line-height: 1.2;
+
+  @media only screen and (max-width: $breakpoint-lg) {
+    background-color: var(--light-blue);
+    border-color: var(--light-blue);
+  }
 
   &:hover {
     border-color: var(--light-blue);
