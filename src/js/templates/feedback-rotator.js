@@ -4,7 +4,10 @@ if(document.querySelector('.feedback-rotator')) {
     perView: 3,
     focusAt: 'center',
     breakpoints: {
-      800: {
+      1000: {
+        perView: 2
+      },
+      640: {
         perView: 1
       }
     }
