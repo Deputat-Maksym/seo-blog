@@ -147,87 +147,101 @@
       text-align: center;
     }
   }
-}
 
-.seo-form--main {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-
-  @media only screen and (max-width: $breakpoint-lg) {
+  form {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
     flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  @media only screen and (max-width: $breakpoint-640) {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  label {
-    margin: 0;
 
     @media only screen and (max-width: $breakpoint-lg) {
-      width: 33.3333%;
-      margin: 0 0 15px;
-      padding: 0 8px 0;
+      flex-wrap: wrap;
+      justify-content: center;
     }
 
     @media only screen and (max-width: $breakpoint-640) {
-      width: 300px;
+      flex-direction: column;
+      align-items: center;
     }
 
-    span {
-      font-size: 1.125rem;
-      font-weight: 500;
-      color: var(--black-light);
-      margin-bottom: 15px;
+    label {
+      margin: 0;
+      display: block;
 
       @media only screen and (max-width: $breakpoint-lg) {
-        margin-bottom: 10px;
-        font-size: 1rem;
+        width: 33.3333%;
+        margin: 0 0 15px;
+        padding: 0 8px 0;
+      }
+
+      @media only screen and (max-width: $breakpoint-640) {
+        width: 300px;
+      }
+
+      span {
+        font-size: 1.125rem;
+        font-weight: 500;
+        color: var(--black-light);
+        margin-bottom: 15px;
+        display: block;
+
+        @media only screen and (max-width: $breakpoint-lg) {
+          margin-bottom: 10px;
+          font-size: 1rem;
+        }
       }
     }
-  }
 
-  input {
-    border: 2px solid var(--dark-blue);
-    width: 230px;
-    font-size: 0.875rem;
-    padding: 13px 26px;
+    input {
+      border: 2px solid var(--dark-blue);
+      width: 230px;
+      font-size: 0.875rem;
+      padding: 13px 26px;
+      font-weight: 300;
+      color: var(--light-purple);
+      border-radius: 22px;
 
-    @media only screen and (max-width: $breakpoint-lg) {
+      @media only screen and (max-width: $breakpoint-lg) {
+        width: 100%;
+      }
+
+      &:focus {
+        box-shadow: var(--round-shadow-lblue-15);
+      }
+    }
+
+    .wpcf7-response-output {
       width: 100%;
     }
 
-    &:focus {
-      box-shadow: var(--round-shadow-lblue-15);
+    .btn--top-form {
+      width: 200px;
+      color: #fff;
+      border-color: #fff;
+      line-height: 1.2;
+      font-size: 1.125rem;
+      font-weight: 500;
+      border-radius: 22px;
+      background: transparent;
+
+      @media only screen and (max-width: $breakpoint-lg) {
+        background-color: var(--light-blue);
+        border-color: var(--light-blue);
+      }
+
+      @media only screen and (max-width: $breakpoint-640) {
+        width: 280px;
+        border: 2px solid var(--dark-blue);
+        margin-top: 10px;
+      }
+
+      &:hover {
+        border-color: var(--light-blue);
+        background-color: var(--light-blue);
+        box-shadow: var(--round-shadow-blue-15);
+        color: var(--dark-blue);
+      }
     }
-  }
-}
-
-.btn--top-form {
-  width: 200px;
-  color: #fff;
-  border-color: #fff;
-  line-height: 1.2;
-
-  @media only screen and (max-width: $breakpoint-lg) {
-    background-color: var(--light-blue);
-    border-color: var(--light-blue);
-  }
-
-  @media only screen and (max-width: $breakpoint-640) {
-    width: 280px;
-    border: 2px solid var(--dark-blue);
-    margin-top: 10px;
-  }
-
-  &:hover {
-    border-color: var(--light-blue);
-    background-color: var(--light-blue);
-    box-shadow: var(--round-shadow-blue-15);
-    color: var(--dark-blue);
   }
 }
 
