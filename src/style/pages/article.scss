@@ -332,9 +332,117 @@
 
   textarea {
     border: 2px solid var(--light-blue);
-    border-radius: 0 0 10px 10px;
+    border-radius: 5px;
     background: #fff;
     width: 100%;
+    padding: 5px 10px;
+  }
+
+  label {
+    display: block;
+    margin: 0;
+  }
+
+  .submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    font-size: 1.125rem;
+    font-weight: 500;
+    border: 2px solid var(--light-blue);
+    border-radius: 22px;
+    width: 196px;
+    background: #fff;
+    color: var(--light-blue);
+    text-transform: uppercase;
+    margin: 25px 0 0;
+
+    @media only screen and (max-width: $breakpoint-400) {
+      margin: 25px auto 0;
+    }
+
+    &:hover {
+      transition: var(--transition);
+      background: var(--light-blue);
+      color: #fff;
+    }
+  }
+}
+
+.comment-form-author, .comment-form-email {
+  input {
+    max-width: 100%;
+    border: 2px solid var(--light-blue);
+    border-radius: 10px;
+    height: 40px;
+    padding: 0 10px;
+  }
+}
+
+.aiowps-captcha-equation {
+  input {
+    width: 70px;
+    border: 2px solid var(--light-blue);
+    border-radius: 10px;
+    height: 40px;
+    padding: 0 10px;
+  }
+}
+
+.comment-form-cookies-consent {
+  display: flex;
+
+  label {
+    font-size: 0.875rem;
+    padding-left: 28px;
+    position: relative;
+
+    &:before {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      top: -2px;
+      left: 0;
+      box-sizing: border-box;
+      margin: 3px 11px 3px 1px;
+      border: solid 2px;
+      border-color: rgba(0, 0, 0, 0.6);
+      border-radius: 2px;
+      width: 18px;
+      height: 18px;
+      vertical-align: top;
+      transition: border-color 0.2s, background-color 0.2s;
+    }
+
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 3px;
+      left: 1px;
+      width: 12px;
+      height: 5px;
+      border: solid 2px transparent;
+      border-right: none;
+      border-top: none;
+      transform: translate(3px, 4px) rotate(-45deg);
+    }
+  }
+
+  input {
+    display: none;
+
+    &:checked ~ label {
+      &:before {
+        border-color: var(--light-blue);
+        background-color: var(--light-blue);
+      }
+
+      &:after {
+        border-color: #fff;
+      }
+    }
   }
 }
 

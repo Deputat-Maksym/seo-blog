@@ -22,6 +22,40 @@
       padding: 20px;
       margin: 10px;
     }
+
+    form {
+      input {
+        width: 100%;
+        font-size: 0.75rem;
+        font-weight: 300;
+        color: var(--light-purple);
+        padding: 16px 26px;
+        border: none;
+        border-radius: 22px;
+
+        &:focus {
+          box-shadow: var(--round-shadow-blue-15);
+          transition: var(--transition);
+          color: var(--dark-blue);
+        }
+      }
+
+      label {
+        margin-bottom: 30px;
+        display: block;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        span {
+          font-size: 0.875rem;
+          color: var(--dark-blue);
+          margin-bottom: 6px;
+          display: block;
+        }
+      }
+    }
   }
 
   &-title {
@@ -166,49 +200,19 @@
   top: 70px;
 }
 
-.seo-form {
-  input {
-    width: 100%;
-    font-size: 0.75rem;
-    font-weight: 300;
-    color: var(--light-purple);
-    padding: 16px 26px;
-    border: none;
-    border-radius: 22px;
-
-    &:focus {
-      box-shadow: var(--round-shadow-blue-15);
-      transition: var(--transition);
-      color: var(--dark-blue);
-    }
-  }
-
-  label {
-    margin-bottom: 30px;
-    display: block;
-
-    &:last-child {
-      margin-bottom: 0;
-    }
-
-    span {
-      font-size: 0.875rem;
-      color: var(--dark-blue);
-      margin-bottom: 6px;
-      display: block;
-    }
-  }
-}
-
 .btn {
   &--seo-form {
-    border: 2px solid #fff;
+    border: 2px solid #fff !important;
     position: relative;
-    color: #fff;
+    color: #fff !important;
+    padding: 0 !important;
+    font-size: 1.125rem !important;
+    font-weight: 500 !important;
+    background: transparent;
 
     &:hover {
       background: var(--dark-blue);
-      border: 2px solid var(--dark-blue);
+      border: 2px solid var(--dark-blue) !important;
       color: #fff;
     }
 
