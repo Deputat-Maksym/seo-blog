@@ -56,27 +56,74 @@ header {
     flex-direction: column;
     right: 0;
     height: calc(100vh - 40px);
+    width: 200px;
     transform: translateX(100%);
     transition: var(--transition);
     background: #fff;
   }
 
-  @media only screen and (max-width: $breakpoint-sm) {
+  @media only screen and (max-width: $breakpoint-400) {
     width: 100%;
   }
 
-  &-item {
+  > .main-menu-item {
     margin-right: 30px;
 
     @media only screen and (max-width: $breakpoint-lg) {
       margin-right: 0;
     }
 
-    @media only screen and (max-width: $breakpoint-sm) {
-      position: relative;
+    > .sub-menu {
+      opacity: 0;
+      visibility: hidden;
+      position: fixed;
+      top: 60px;
+      display: flex;
+      background: var(--sub-menu);
+      left: 0;
+      flex-wrap: wrap;
+      width: 100vw;
+      justify-content: center;
+
+      @media only screen and (max-width: $breakpoint-lg) {
+        top: 0;
+        width: calc(100vw - 200px);
+        left: unset;
+        transform: translateX(0);
+        right: 200px;
+        max-height: calc(100vh - 40px);
+        overflow-y: auto;
+      }
+
+      @media only screen and (max-width: $breakpoint-400) {
+        top: 60px;
+        width: 100%;
+        right: 0;
+        max-height: calc(100vh - 100px);
+      }
+
+      > li {
+        padding: 25px 35px;
+        width: 240px;
+
+        @media only screen and (max-width: $breakpoint-sm) {
+          padding: 15px 10px;
+        }
+
+        > a {
+          font-size: 0.875rem;
+          font-weight: 700;
+          text-transform: uppercase;
+        }
+
+        &:hover {
+          background: var(--sub-menu-hover);
+          transition: var(--transition);
+        }
+      }
     }
 
-    &:hover .sub-menu {
+    &:hover > .sub-menu {
       opacity: 1;
       visibility: visible;
       transition: var(--transition);
@@ -94,6 +141,7 @@ header {
 
       @media only screen and (max-width: $breakpoint-lg) {
         justify-content: center;
+        padding: 0 5px;
       }
 
       &:hover {
@@ -130,35 +178,7 @@ header {
 }
 
 .sub-menu {
-  opacity: 0;
-  visibility: hidden;
-  position: fixed;
-  top: 60px;
-  display: flex;
-  background: var(--sub-menu);
-  left: 50%;
-  transform: translateX(-50%);
-
-  @media only screen and (max-width: $breakpoint-lg) {
-    position: absolute;
-    top: 0;
-    right: 100%;
-    left: unset;
-    transform: none;
-    flex-direction: column;
-    max-height: calc(100vh - 40px);
-    overflow: auto;
-  }
-
-  &-block {
-    padding: 25px 35px;
-    width: 240px;
-
-    &:hover {
-      background: var(--sub-menu-hover);
-      transition: var(--transition);
-    }
-
+  li {
     a {
       font-size: 0.875rem;
       color: #fff;
@@ -167,13 +187,6 @@ header {
       margin-bottom: 12px;
       line-height: 1;
       white-space: nowrap;
-    }
-
-    &-title {
-      font-size: 0.875rem;
-      color: #fff;
-      font-weight: 700;
-      text-transform: uppercase;
     }
   }
 }
